@@ -192,6 +192,7 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - _pages/publications.md
   - _pages/profiles.md
   - _pages/repositories.md
   - _pages/teaching.md
