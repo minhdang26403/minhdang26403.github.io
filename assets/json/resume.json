@@ -97,34 +97,19 @@
       "name": "Distributed Systems",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Replication Protocols",
-        "Distributed Consensus",
-        "Resource Scheduling"
-      ]
+      "keywords": ["Replication Protocols", "Distributed Consensus", "Resource Scheduling"]
     },
     {
       "name": "Storage Systems",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Distributed File Systems",
-        "Key-Value Stores",
-        "Cloud Storage",
-        "Database Systems"
-      ]
+      "keywords": ["Distributed File Systems", "Key-Value Stores", "Cloud Storage", "Database Systems"]
     },
     {
       "name": "Programming Languages",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Modern C++",
-        "STL",
-        "Boost",
-        "gRPC",
-        "Protocol Buffers"
-      ]
+      "keywords": ["Modern C++", "STL", "Boost", "gRPC", "Protocol Buffers"]
     }
   ],
   "languages": [
@@ -143,21 +128,12 @@
     {
       "name": "MLSys",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Large-scale LLM Serving",
-        "Efficient LLM Inference",
-        "Distributed Training",
-        "Deep Learning Compilers and Runtimes"
-      ]
+      "keywords": ["Large-scale LLM Serving", "Efficient LLM Inference", "Distributed Training", "Deep Learning Compilers and Runtimes"]
     },
     {
       "name": "Programming Languages",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Modern C++",
-        "Python",
-        "CPython Internals"
-      ]
+      "keywords": ["Modern C++", "Python", "CPython Internals"]
     }
   ],
   "projects": [
