@@ -37,15 +37,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-",
+        },{id: "post-the-heart-of-a-tensor-library-a-quot-thick-quot-ndarray-and-the-control-plane-vs-data-plane-design",
         
-          title: "",
+          title: "The Heart of a Tensor Library - A &quot;Thick&quot; NDArray and the Control...",
         
-        description: "",
+        description: "An evaluation of multi-dimension array design",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/2025-11-11-ndarray-design/";
+            window.location.href = "/blog/2025/ndarray-design/";
           
         },
       },{id: "post-a-post-with-plotly-js",
