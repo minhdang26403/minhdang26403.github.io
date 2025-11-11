@@ -87,8 +87,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Serving Complexity # blog_name will be displayed in your blog page
+blog_description: Large models create complex systems problems. This blog is about solving them. Notes on distributed systems, C++, and LLM infrastructure.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
