@@ -1,12 +1,11 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Dang Truong",
+    "label": "Software Engineer",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "truongminhdang26403[at]gmail[dot]com",
+    "url": "https://minhdang26403.github.io/",
+    "summary": "An engineer aspiring to apply deep distributed systems knowledge to the challenges of large-scale LLM serving and inference.",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -24,134 +23,113 @@
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "Nutanix",
+      "position": "Member of Technical Staff",
+      "startDate": "2025-06-02",
+      "endDate": "Present",
+      "summary": "C++, distributed systems, and storage systems.",
+      "highlights": ["Replication protocols", "Resource Scheduling", "Data Protection"]
+    },
+    {
+      "name": "Nutanix",
+      "position": "Member of Technical Staff Intern",
+      "startDate": "2024-05-01",
+      "endDate": "2024-08-01",
+      "summary": "C++, distributed systems, gRPC, Python.",
+      "highlights": [
+        "Implemented a distributed snapshot operation in the Network File System (NFS), increasing snapshot capacity from 1,200 to 7,200 files and reducing snapshot time by 55%.",
+        "Optimized the NFS's distributed lock service and gRPC communication overhead, reducing file I/O latency by 80%.",
+        "Collaborated with Control Plane and Core Data Path teams to identify performance bottlenecks, achieving a 65% increase in overall system throughput."
+      ]
+    },
+    {
+      "name": "Teradata",
+      "position": "Software Engineer Intern",
+      "startDate": "2023-05-01",
+      "endDate": "2023-12-01",
+      "summary": "C++, database optimization, SQL, Python.",
+      "highlights": [
+        "Work on the Workload Management component of the Teradata SQL engine, enhancing resource allocation and optimizing query performance for diverse database workloads.",
+        "Develop a real-time performance monitoring tool in C++ to track resource usage of 10,000+ concurrent queries.",
+        "Achieve an 80% reduction in message passing overhead by implementing a concurrent LRU cache within the tool.",
+        "Optimize the tool's throughput to handle 100,000+ requests per second, facilitating efficient query optimization for large-scale systems."
+      ]
     }
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "organization": "Vietnam Tech Society",
+      "location": "Remote",
+      "position": "Software Engineer",
+      "startDate": "2022-08-01",
+      "endDate": "2022-11-01",
+      "summary": "React, Node.js, MongoDB.",
+      "highlights": [
+        "Collaborated with 5 engineers to design and develop Techsphere, a mentoring platform with 10,000+ users.",
+        "Increased users' satisfaction by 25% by improving UI and fixing major bugs in the feedback and scheduling system.",
+        "Reduced rendering time of filtering feature by 30% by optimizing 20+ React components and network traffic."
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "institution": "Denison University",
+      "location": "Granville, OH",
+      "url": "https://denison.edu",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2021-08-21",
+      "endDate": "2025-05-15",
+      "score": "3.97/4.00",
+      "courses": [
+        "Data Structures and Algorithms",
+        "Operating Systems",
+        "Distributed Systems",
+        "Database Systems",
+        "Computer Architecture",
+        "Computer Networks",
+        "Parallel Computing"
+      ]
     }
   ],
   "skills": [
     {
-      "name": "Physics",
+      "name": "Distributed Systems",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Replication Protocols",
+        "Distributed Consensus",
+        "Resource Scheduling"
+      ]
+    },
+    {
+      "name": "Storage Systems",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Distributed File Systems",
+        "Key-Value Stores",
+        "Cloud Storage",
+        "Database Systems"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Modern C++",
+        "STL",
+        "Boost",
+        "gRPC",
+        "Protocol Buffers"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Vietnamese",
       "fluency": "Native speaker",
       "icon": ""
     },
@@ -163,38 +141,64 @@
   ],
   "interests": [
     {
-      "name": "Physics",
+      "name": "MLSys",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Large-scale LLM Serving",
+        "Efficient LLM Inference",
+        "Distributed Training",
+        "Deep Learning Compilers and Runtimes"
       ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Programming Languages",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Modern C++",
+        "Python",
+        "CPython Internals"
+      ]
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Distributed Key-Value Store",
+      "summary": "A distributed key-value store implemented in Go with Raft consensus protocol, database sharding, and lazy compaction.",
+      "highlights": [
+        "Designed and implemented a fault-tolerant key-value storage system using the Raft consensus algorithm, maintaining data consistency and availability in the presence of failures and network partitions.",
+        "Leveraged Database Sharding techniques to enhance the performance and scalability of the key-value store by distributing data across multiple replicated state machines."
+      ],
+      "startDate": "2023-03-01",
+      "endDate": "2023-06-01",
+      "url": "https://github.com/minhdang26403/raft-kv-store"
+    },
+    {
+      "name": "BusTub Database",
+      "summary": "A distributed key-value store implemented in Go with Raft consensus protocol, database sharding, and lazy compaction.",
+      "highlights": [
+        "Implemented several futures for the database system, including Buffer Pool Manager, Hash Index, Query Execution, and Concurrency Control.",
+        "Designed a thread-safe Buffer Pool Manager that moves physical pages back and forth from memory to disk, allowing the DBMS to store databases that are larger than the amount of available main memory.",
+        "Reduced the lock contention between concurrent threads in the buffer pool by developing a Parallel Buffer Pool Manager that holds multiple buffer pool instances, each with its own lock.",
+        "Decreased query response time by integrating a Hash Index (a disk-backed hash table) into the DBMS to achieve data lookup in constant time.",
+        "Optimized the time to grow or shrink the database by using an extendable hashing scheme to dynamically modify hash functions for the Hash Index.",
+        "Built query executors that support sequential scan, insert, update, delete, join, and aggregation operations using the iterator query processing model.",
+        "Enhanced the DBMS to handle multiple access requests by implementing a Lock Manager that ensures concurrent transactions access shared data items in the correct order and prevents possible deadlock."
+      ],
+      "startDate": "2022-06-01",
+      "endDate": "2022-08-01",
+      "url": "https://github.com/minhdang26403/bustub"
+    },
+    {
+      "name": "Concurrent Web Server",
+      "summary": "A concurrent web server implemented in C with thread pool and LRU cache.",
+      "highlights": [
+        "Built a web proxy that reads and parses HTTP requests from a web browser, forwards them to web servers, reads servers' responses, and forward those responses to corresponding clients.",
+        "Scaled the web proxy to handle multiple concurrent requests by adding a thread pool, reducing the overhead of spawning a new thread/process for each new client.",
+        "Decreased the access time of recently-used web objects by integrating an LRU cache to the proxy."
+      ],
+      "startDate": "2022-05-01",
+      "endDate": "2022-06-01",
+      "url": "https://github.com/minhdang26403/concurrent-web-proxy"
     }
   ]
 }
