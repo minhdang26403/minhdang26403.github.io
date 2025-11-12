@@ -2,8 +2,8 @@
 layout: post
 title: How to Build a Multi-Dimensional Array by Separating View Logic from Compute Kernels
 date: 2025-11-11 11:30:00
-description: A deep dive into my `NDArray`'s core design. I explain the "Control Plane vs. Data Plane" model–using "smart" Python to handle all the complex view and stride logic, which lets us build a "dumb," simple, and incredibly fast C++ and CUDA backend
-tags: MLSys, Systems Design, Python, C++, Deep Learning
+description: A deep dive into my multi-dimensional design. I explain the "Control Plane vs. Data Plane" model, which implements "smart" Python to handle all the complex view and stride logic, letting us build a "dumb," simple, and incredibly fast C++ and CUDA backend
+tags: mlsys, systems-design, python
 categories: needle
 featured: true
 ---
@@ -51,7 +51,7 @@ Take `permute`. It's the perfect example of a "free" operation that just shuffle
         )
 ```
 
-The Control Plane is where all this "view" magic lives. Slicing (`__getitem__`)? That's just a math problem to find a new `offset` and `strides`. Broadcasting (`broadcast_to`)? That's the "zero-stride trick." It's all handled once, in pure Python, and it's easy to test. Since all the `__getitem__` and `broadcast_to` are more complicated than `permute`, I don't include it here, but you can take a look at their implementation at my [repo](http://github.com/minhdang26403/needle).
+The Control Plane is where all this "view" magic lives. Slicing (`__getitem__`)? That's just a math problem to find a new `offset` and `strides`. Broadcasting (`broadcast_to`)? That's the "zero-stride trick." It's all handled once, in pure Python, and it's easy to test. Since the `__getitem__` and `broadcast_to` methods are a little bit more complicated than `permute`, I don't include them here, but you can take a look at their implementation at my [repo](http://github.com/minhdang26403/needle).
 
 ### ⚙️ The Data Plane: A "Dumb" C++ Engine
 
