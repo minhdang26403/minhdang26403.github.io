@@ -1,10 +1,10 @@
 ---
 layout: post
 title: An Engineer's Guide to Deep Learning Optimizers
-date: 2025-11-11 22:30:00
+date: 2025-10-21 22:30:00
 description: A deep-dive into deep learning optimizers where we trace the evolution from SGD to Momentum and finally to Adam.
-tags: deep-learning, mlsys, optimization, adam, sgd, gradient-descent, machine-learning
-categories: mlsys, deep-learning
+tags: deep-learning, optimization, adam, sgd, machine-learning
+categories: deep-learning
 featured: true
 ---
 
@@ -28,12 +28,12 @@ This is the story of how we built a better "hiker" for this insane terrain. It s
 
 ### The Baseline: Gradient Descent (GD)
 
-Gradient Descent (also called "Batch" Gradient Descent) is the simple, textbook algorithm you learn in your first calculus class.
+Gradient Descent (also called "Batch" Gradient Descent) is the simple, textbook algorithm you learn in your first machine learning class.
 
 **The Idea:** "Before I take a single step, I will poll _every single person_ (data point) in the entire dataset. I'll average all their opinions of which way is 'downhill' to get a perfect, noise-free gradient, and _then_ I'll take one, confident step in that exact direction."
 
 The update rule is just:
-$W_{\text{new}} = W_{\text{old}} - \eta \cdot \nabla L(W)$
+$$W_{\text{new}} = W_{\text{old}} - \eta \cdot \nabla L(W)$$
 
 Where $\nabla L(W)$ is the gradient (derivative) of the loss, calculated over **all** training examples.
 
@@ -110,8 +110,8 @@ At each step, we do two things:
 
 In code, this "velocity" vector $v$ is updated like this (where $\beta$ is the momentum term, usually 0.9):
 
-$v_t = (\beta \cdot v_{t-1}) + g_t$
-$W_{\text{new}} = W_{\text{old}} - \eta \cdot v_t$
+$$v_t = (\beta \cdot v_{t-1}) + g_t$$
+$$W_{\text{new}} = W_{\text{old}} - \eta \cdot v_t$$
 
 (Note: You'll see different forms of this equation, but they all share this core idea: the current step is a combination of the previous step and the new gradient.)
 
@@ -131,10 +131,7 @@ Imagine our optimizer is in that narrow ravine. The "bounces" are just noisy gra
 **Momentum** averages them:
 
 - **Step 1 Velocity ($v_1$):** `[+10, -0.1]`
-- **Step 2 Velocity ($v_2$):** $(\beta \cdot v_1) + g_2$
-  `v_2 = (0.9 * [+10, -0.1]) + [-10, -0.1]`
-  `v_2 = [+9, -0.09] + [-10, -0.1]`
-  `v_2 = [-1, -0.19]`
+- **Step 2 Velocity ($v_2$):** `v_2 = (0.9 * [+10, -0.1]) + [-10, -0.1] = [+9, -0.09] + [-10, -0.1] = [-1, -0.19]`
 
 Look at that! The horizontal part (the `+10` and `-10`) has **averaged out** and cancelled. The vertical part (the `-0.1` and `-0.1`) has **accumulated**.
 
@@ -215,10 +212,10 @@ Adam is not a new idea from scratch. It's the "Avengers Assemble" of optimizers,
 This first part of Adam is just SGD with Momentum, but with a fix for the "cold-start" problem.
 
 - **The Biased Snowball ($m_t$):** Adam keeps track of the momentum (the first moment) just like before:
-  $m_t = \beta_1 \cdot m_{t-1} + (1 - \beta_1) \cdot g_t$
+  $$m_t = \beta_1 \cdot m_{t-1} + (1 - \beta_1) \cdot g_t$$
 - **The "Cold-Start" Bug:** As we said, $m_0$ is initialized to 0. This makes $m_1$, $m_2$, $m_3$, etc., all artificially small. They are _biased_ toward zero.
 - **The Unbiasing Trick:** The Adam authors provided a simple, brilliant fix. They calculate this bias analytically and just divide it out.
-  $\hat{m}_t = \frac{m_t}{1 - \beta_1^t}$
+  $$\hat{m}_t = \frac{m_t}{1 - \beta_1^t}$$
 
 Let's see this in action (with $\beta_1 = 0.9$):
 
@@ -233,12 +230,12 @@ This is the second, more powerful idea. It solves the "one-size-fits-all" proble
 
 - **The Problem:** We need a _per-parameter_ learning rate. We need to know if the terrain for `Weight_1` is flat or spiky.
 - **The Fix (RMSprop):** We can _measure_ the "spikiness" of the terrain by tracking a moving average of the _squared gradients_. This is the **second moment ($v_t$)**.
-  $v_t = \beta_2 \cdot v_{t-1} + (1 - \beta_2) \cdot (g_t)^2$
+  $$v_t = \beta_2 \cdot v_{t-1} + (1 - \beta_2) \cdot (g_t)^2$$
 - **Why squared?** Squaring $g_t$ makes it positive. Now, $v_t$ is a measure of "gradient volatility."
   - If $v_t$ is _large_, it means this parameter has huge, spiky gradients. The terrain is treacherous.
   - If $v_t$ is _small_, it means this parameter has tiny, consistent gradients. The terrain is flat.
 - **The "Aha!" Moment:** The final Adam update rule is, conceptually:
-  $W_{\text{new}} = W_{\text{old}} - \alpha \cdot \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}$
+  $$W_{\text{new}} = W_{\text{old}} - \alpha \cdot \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}$$
 
 Look at that division. We are dividing our "snowball" step ($\hat{m}_t$) by the square root of its "volatility" ($\hat{v}_t$).
 
