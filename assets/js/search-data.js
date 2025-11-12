@@ -37,15 +37,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-",
+        },{id: "post-how-to-build-a-multi-dimensional-array-by-separating-view-logic-from-compute-kernels",
         
-          title: "",
+          title: "How to Build a Multi-Dimensional Array by Separating View Logic from Compute Kernels...",
         
-        description: "",
+        description: "A deep dive into my `NDArray`&#39;s core design. I explain the &quot;Control Plane vs. Data Plane&quot; model–using &quot;smart&quot; Python to handle all the complex view and stride logic, which lets us build a &quot;dumb,&quot; simple, and incredibly fast C++ and CUDA backend",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/2025-11-11-ndarray-design/";
+            window.location.href = "/blog/2025/ndarray-design/";
           
         },
       },{id: "post-a-post-with-plotly-js",
