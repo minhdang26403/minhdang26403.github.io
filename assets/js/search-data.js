@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-how-to-build-a-multi-dimensional-array-by-separating-view-logic-from-compute-kernels",
+        },{id: "post-an-engineer-39-s-guide-to-deep-learning-optimizers",
+        
+          title: "An Engineer&#39;s Guide to Deep Learning Optimizers",
+        
+        description: "A deep-dive into deep learning optimizers where we trace the evolution from SGD to Momentum and finally to Adam.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/optimizers/";
+          
+        },
+      },{id: "post-how-to-build-a-multi-dimensional-array-by-separating-view-logic-from-compute-kernels",
         
           title: "How to Build a Multi-Dimensional Array by Separating View Logic from Compute Kernels...",
         
