@@ -41,11 +41,22 @@ ninja.data = [{
         
           title: "How to Build a Multi-Dimensional Array by Separating View Logic from Compute Kernels...",
         
-        description: "A deep dive into my `NDArray`&#39;s core design. I explain the &quot;Control Plane vs. Data Plane&quot; model–using &quot;smart&quot; Python to handle all the complex view and stride logic, which lets us build a &quot;dumb,&quot; simple, and incredibly fast C++ and CUDA backend",
+        description: "A deep dive into my multi-dimensional design. I explain the &quot;Control Plane vs. Data Plane&quot; model, which implements &quot;smart&quot; Python to handle all the complex view and stride logic, letting us build a &quot;dumb,&quot; simple, and incredibly fast C++ and CUDA backend",
         section: "Posts",
         handler: () => {
           
             window.location.href = "/blog/2025/ndarray-design/";
+          
+        },
+      },{id: "post-why-not-newton-the-real-reason-we-39-re-stuck-with-sgd-for-deep-learning",
+        
+          title: "Why Not Newton? The Real Reason We&#39;re Stuck with SGD for Deep Learning...",
+        
+        description: "It&#39;s not just the petabyte-sized Hessian. The real reason we don&#39;t use Newton&#39;s.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/newton-vs-sgd/";
           
         },
       },{id: "post-a-post-with-plotly-js",
