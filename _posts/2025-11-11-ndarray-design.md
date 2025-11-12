@@ -2,7 +2,7 @@
 layout: post
 title: How to Build a Multi-Dimensional Array by Separating View Logic from Compute Kernels
 date: 2025-11-11 11:30:00
-description: A deep dive into my `NDArray`'s core design. I explain the "Control Plane vs. Data Plane" model: using "smart" Python to handle all the complex view and stride logic, which lets us build a "dumb," simple, and incredibly fast C++ and CUDA backend
+description: A deep dive into my `NDArray`'s core design. I explain the "Control Plane vs. Data Plane" model–using "smart" Python to handle all the complex view and stride logic, which lets us build a "dumb," simple, and incredibly fast C++ and CUDA backend
 tags: MLSys, Systems Design, Python, C++, Deep Learning
 categories: needle
 featured: true
