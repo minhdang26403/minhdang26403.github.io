@@ -22,8 +22,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Member of Technical Staff at Nutanix, specializing in building robust and high-performance distributed systems. My work involves designing and building infrastructure for backup and replication across diverse storage systems, from internal distributed file systems to cloud targets like AWS.
+I am a Member of Technical Staff at Nutanix, specializing in building robust and high-performance distributed systems. My work involves designing and building infrastructure for backup and replication across diverse storage systems, from internal distributed file systems to cloud storage vendors like AWS and Azure.
 
-I am driven to apply this systems expertise to the next generation of AI workloads. My focus is expanding into MLSys, specifically on building large-scale LLM serving infrastructure and optimizing efficient LLM inference—problems that are a natural extension of my distributed systems background.
-
-I'm always eager to discuss challenges in C++, distributed systems, parallel computing, or building scalable infrastructure for production AI.
+I believe that the next generation of AI is fundamentally a distributed systems challenge. I am currently applying my background in systems engineering to AI Systems, with a deep focus on LLM inference optimization and large-scale serving infrastructure.
